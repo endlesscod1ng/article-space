@@ -1,7 +1,7 @@
 import { Configuration } from "webpack";
 import { BuildOptions } from "./types";
 import { buildPlugins } from "./buildPlugins";
-import { buildRules } from "./buildRules";
+import { buildLoaders } from "./buildLoaders";
 import { buildResolvers } from "./buildResolvers";
 import { buildDevServer } from "./buildDevServer";
 
@@ -21,7 +21,7 @@ export function buildWebpackConfig({
     },
     plugins: buildPlugins(buildPaths),
     module: {
-      rules: buildRules(),
+      rules: buildLoaders(isDev),
     },
     resolve: buildResolvers(),
     devServer: isDev ? buildDevServer(port) : undefined,

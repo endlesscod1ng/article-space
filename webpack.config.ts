@@ -12,7 +12,7 @@ export default (env: BuidlEnv): Configuration => {
   const isDev = mode === "development";
 
   const buildPaths = {
-    entry: path.resolve(__dirname, "src", "index.ts"),
+    entry: path.resolve(__dirname, "src", "index.tsx"),
     build: path.resolve(__dirname, "build"),
     html: path.resolve(__dirname, "public", "index.html"),
     favicon: path.resolve(__dirname, "public", "favicon.ico"),

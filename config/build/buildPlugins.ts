@@ -1,6 +1,8 @@
 import { ProgressPlugin, WebpackPluginInstance } from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { BuilPaths } from "./types";
+
 
 export function buildPlugins(buildPaths: BuilPaths): WebpackPluginInstance[] {
   return [
@@ -9,5 +11,6 @@ export function buildPlugins(buildPaths: BuilPaths): WebpackPluginInstance[] {
       favicon: buildPaths.favicon,
     }),
     new ProgressPlugin(),
+    new MiniCssExtractPlugin(),
   ];
 }
