@@ -1,5 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url("./reset.scss");
+@import url("./variables.scss");
+@import url("./theme/light.scss");
+@import url("./theme/dark.scss");
+
+html,
+body,
+#root,
+.app {
+  font: var(--font-m);
+  background: var(--bg-primary);
+  color: var(--color-primary);
 }
