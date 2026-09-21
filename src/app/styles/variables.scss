@@ -1,4 +1,13 @@
 :root {
+  /* Sizes */
+  --height-header: 100px;
+  --height-footer: 100px;
+  --height-page-min: calc(100vh - var(--height-header));
+
+  --width-containet-min: 400px;
+  --width-containet-max: 1440px;
+
+  /* Fonst */
   --font-family-main: Consolas, "Times New Roman", serif;
   --font-line: 1.2;
 
