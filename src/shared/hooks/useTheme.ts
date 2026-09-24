@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../app/providers/Theme/ThemeContext";
+import { ThemeContext } from "../../app/providers/ThemeProvider/ThemeContext";
 // import { Theme } from "../../app/providers/Theme/ThemeProvider";
 
 // interface UseThemeResult {

@@ -1,9 +1,7 @@
-import { Routes, Route } from "react-router";
-import { HomePage } from "../../pages/HomePage";
-import { ArticlesPage } from "../../pages/ArticlesPage";
 import { Suspense } from "react";
 import "../styles/index.scss";
 import { useTheme } from "../../shared/hooks/useTheme";
+import { AppRouter } from "../providers/router/AppRouter";
 
 export function App() {
   const { theme, changeTheme } = useTheme();
@@ -13,16 +11,7 @@ export function App() {
         <header>
           <button onClick={changeTheme}>Theme</button>
         </header>
-        <Routes>
-          <Route
-            path={"/"}
-            element={<HomePage />}
-          />
-          <Route
-            path={"/articles"}
-            element={<ArticlesPage />}
-          />
-        </Routes>
+        <AppRouter />
       </Suspense>
     </div>
   );

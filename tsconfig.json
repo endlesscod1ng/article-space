@@ -9,7 +9,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // }
   },
   "include": ["src/**/*", "global.d.ts"],
   "exclude": ["node_modules"],
