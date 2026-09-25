@@ -1,0 +1,13 @@
+.sidebar {
+  background: var(--bg-secondary);
+  color: var(--color-secondary);
+  width: var(--width-sidebar);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.collapsed {
+    width: var(--width-sidebar-collapsed);
+  }
+}

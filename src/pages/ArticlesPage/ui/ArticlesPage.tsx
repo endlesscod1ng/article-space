@@ -6,7 +6,9 @@ interface ArticlesPageProps {
 
 const ArticlesPage = ({ className }: ArticlesPageProps) => {
   return (
-    <div className={[s.articlesPage, className].filter(Boolean).join(" ")}>
+    <div
+      className={[s.articlesPage, "page", className].filter(Boolean).join(" ")}
+    >
       <div>ArticlesPage</div>
     </div>
   );

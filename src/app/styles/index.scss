@@ -13,6 +13,7 @@ body,
 }
 
 header {
+  height: var(--height-header);
   background: var(--bg-secondary);
   color: var(--color-secondary);
 }
@@ -21,4 +22,8 @@ main {
   background: var(--bg-primary);
   min-height: var(--height-page-min);
   display: flex;
+}
+.page {
+  flex-grow: 1;
+  padding: 20px;
 }

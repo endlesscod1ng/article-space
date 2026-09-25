@@ -2,25 +2,19 @@ import { Suspense } from "react";
 import "../styles/index.scss";
 import { useTheme } from "@/shared/hooks/useTheme";
 import { AppRouter } from "../providers/router/AppRouter";
-import { Navbar } from "@/widgets/Navbar";
+
 import { Sidebar } from "@/widgets/Sidebar";
-import Theme from "@/shared/assets/theme.svg";
+import ThemeIcon from "@/shared/assets/theme.svg";
 import { AppButton } from "@/shared/ui/AppButton/AppButton";
 
 export function App() {
-  const { theme, changeTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className={`app ${theme}`}>
       <Suspense fallback={<div>{"Loading..."}</div>}>
-        <header>
-          <Navbar>
-            <AppButton onClick={changeTheme}>
-              <Theme fill={theme === "dark" ? "#000" : "#fff"} />
-            </AppButton>
-          </Navbar>
-        </header>
+        <header></header>
         <main>
-          {/* <Sidebar /> */}
+          <Sidebar />
           <AppRouter />
         </main>
       </Suspense>

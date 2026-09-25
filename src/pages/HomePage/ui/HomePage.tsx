@@ -6,7 +6,7 @@ interface HomePageProps {
 
 const HomePage = ({ className }: HomePageProps) => {
   return (
-    <div className={[s.homePage, className].filter(Boolean).join(" ")}>
+    <div className={[s.homePage, "page", className].filter(Boolean).join(" ")}>
       <div>HomePage</div>
     </div>
   );
