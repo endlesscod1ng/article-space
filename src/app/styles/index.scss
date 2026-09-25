@@ -11,10 +11,12 @@ body,
   background: var(--bg-primary);
   color: var(--color-primary);
 }
+
 header {
   background: var(--bg-secondary);
   color: var(--color-secondary);
 }
+
 main {
   background: var(--bg-primary);
   min-height: var(--height-page-min);
