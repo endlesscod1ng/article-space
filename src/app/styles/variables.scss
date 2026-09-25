@@ -1,8 +1,17 @@
 :root {
+  /* Transition */
+  --transition-delay: 0.3s;
+
+  /* Colors */
+  --color-accented: blue;
+
   /* Sizes */
   --height-header: 100px;
   --height-footer: 100px;
   --height-page-min: calc(100vh - var(--height-header));
+
+  --width-sidebar: 300px;
+  --width-sidebar-collapsed: 80px;
 
   --width-containet-min: 400px;
   --width-containet-max: 1440px;

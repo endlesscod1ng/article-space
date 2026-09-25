@@ -1,0 +1,16 @@
+.appLink {
+  text-decoration: none;
+  transition: color linear var(--transition-delay);
+
+  &.primary {
+    color: var(--color-primary);
+  }
+
+  &.secondary {
+    color: var(--color-secondary);
+  }
+
+  &:hover {
+    color: var(--color-accented);
+  }
+}

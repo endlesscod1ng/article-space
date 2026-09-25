@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { ArticlesPage } from "../../pages/ArticlesPage";
-import { HomePage } from "../../pages/HomePage";
+import { ArticlesPage } from "@/pages/ArticlesPage";
+import { HomePage } from "@/pages/HomePage";
 
 const routePath = {
   main: "/",

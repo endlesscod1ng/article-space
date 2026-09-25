@@ -10,9 +10,9 @@
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    // "paths": {
-    //   "@/*": ["./src/*"]
-    // }
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src/**/*", "global.d.ts"],
   "exclude": ["node_modules"],
