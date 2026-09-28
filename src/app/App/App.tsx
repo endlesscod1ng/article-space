@@ -1,11 +1,10 @@
 import { Suspense } from "react";
-import "../styles/index.scss";
-import { useTheme } from "@/shared/hooks/useTheme";
 import { AppRouter } from "../providers/router/AppRouter";
-
 import { Sidebar } from "@/widgets/Sidebar";
-import ThemeIcon from "@/shared/assets/theme.svg";
-import { AppButton } from "@/shared/ui/AppButton/AppButton";
+import { useTheme } from "@/shared/hooks/useTheme";
+import "../styles/index.scss";
+
+
 
 export function App() {
   const { theme } = useTheme();

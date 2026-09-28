@@ -1,5 +1,11 @@
 .appButton {
   cursor: pointer;
+  &.primary {
+    color: var(--color-primary);
+  }
+  &.secondary {
+    color: var(--color-secondary);
+  }
   &.clear {
     background: none;
     outline: none;
