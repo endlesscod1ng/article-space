@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { routesConfig } from "@/shared/configs/routeConfig";
+import { NotFoundPage } from "@/pages/NotFoundPage";
 
 export const AppRouter = () => {
   return (
@@ -11,6 +12,10 @@ export const AppRouter = () => {
           element={r.element}
         />
       ))}
+      <Route
+        path={"*"}
+        element={<NotFoundPage />}
+      />
     </Routes>
   );
 };
