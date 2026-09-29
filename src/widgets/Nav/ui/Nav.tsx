@@ -8,13 +8,18 @@ interface NavProps {
 }
 
 export const Nav = ({ className }: NavProps) => {
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
 
   return (
     <>
       <nav className={[s.nav, className].filter(Boolean).join(" ")}>
         {routesConfig.map((r) => (
-          <AppLink to={r.path}>{t(`${r.name}`)}</AppLink>
+          <AppLink
+            key={r.path + r.name}
+            to={r.path}
+          >
+            {t(`${r.name}`)}
+          </AppLink>
         ))}
       </nav>
     </>

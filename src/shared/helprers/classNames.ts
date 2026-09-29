@@ -8,8 +8,8 @@ export function classNames(
     cls,
     ...additional.filter(Boolean),
     ...Object.entries(mods)
-      .filter(([k, v]) => Boolean(v))
-      .map(([k, v]) => k),
+      .filter(([_, v]) => Boolean(v))
+      .map(([k, _]) => k),
   ].join(" ");
 }
 // classNames("1", { "2": true, "3": true, "4": false }, ["555", "666", "777"]);

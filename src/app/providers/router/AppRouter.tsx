@@ -8,6 +8,7 @@ export const AppRouter = () => {
     <Routes>
       {routesConfig.map((r) => (
         <Route
+          key={r.path + r.name}
           path={r.path}
           element={r.element}
         />

@@ -24,7 +24,6 @@ export function buildLoaders(isDev: boolean): RuleSetRule[] {
           },
         },
       },
-      ,
       "sass-loader",
     ],
   };
