@@ -8,23 +8,18 @@
   /* Sizes */
   --height-header: 80px;
   --height-page-min: calc(100vh - var(--height-header));
-
   --width-sidebar: 250px;
   --width-sidebar-collapsed: 120px;
-
   --width-containet-min: 400px;
   --width-containet-max: 1440px;
 
   /* Fonst */
-  --font-family-main: Consolas, "Times New Roman", serif;
+  --font-family-main: consolas, "Times New Roman", serif;
   --font-line: 1.2;
-
   --font-size-s: 16px;
   --font-s: var(--font-size-s) / var(--font-line) var(--font-family-main);
-
   --font-size-m: 20px;
   --font-m: var(--font-size-m) / var(--font-line) var(--font-family-main);
-
   --font-size-l: 24px;
   --font-l: var(--font-size-l) / var(--font-line) var(--font-family-main);
 }
