@@ -6,12 +6,15 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./app/providers/ThemeProvider/ThemeProvider";
 
 import "@/shared/configs/i18n";
+import { ErrorBoundary } from "./app/providers/ErrorBoundary/ErrorBoundary";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <BrowserRouter>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </ErrorBoundary>
   </BrowserRouter>,
 );
