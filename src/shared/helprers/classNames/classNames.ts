@@ -12,4 +12,4 @@ export function classNames(
       .map(([k, _]) => k),
   ].join(" ");
 }
-// classNames("1", { "2": true, "3": true, "4": false }, ["555", "666", "777"]);
+// 
