@@ -3,6 +3,7 @@ import { AppRouter } from "../providers/router/AppRouter";
 import { Sidebar } from "@/widgets/Sidebar";
 import { useTheme } from "@/shared/hooks/useTheme";
 import "../styles/index.scss";
+import { PageLoader } from "@/widgets/PageLoader";
 
 export function App() {
   const { theme } = useTheme();
@@ -13,13 +14,13 @@ export function App() {
   // }, []);
   return (
     <div className={`app ${theme}`}>
-      <Suspense fallback={<div>{"Loading..."}</div>}>
-        <header></header>
-        <main>
-          <Sidebar />
+      <header></header>
+      <main>
+        <Sidebar />
+        <Suspense fallback={<PageLoader />}>
           <AppRouter />
-        </main>
-      </Suspense>
+        </Suspense>
+      </main>
     </div>
   );
 }
