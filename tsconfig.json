@@ -15,7 +15,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*", "global.d.ts"],
+  "include": ["src/**/*", "global.d.ts", "./setupTests.ts"],
   "exclude": ["node_modules"],
   "ts-node": {
     "compilerOptions": {

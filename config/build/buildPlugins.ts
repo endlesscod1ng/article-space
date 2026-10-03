@@ -1,5 +1,6 @@
 import { DefinePlugin, ProgressPlugin, WebpackPluginInstance } from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { BuildPaths } from "./types";
 
@@ -17,5 +18,6 @@ export function buildPlugins(
     new DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev),
     }),
+    new BundleAnalyzerPlugin({ openAnalyzer: false }),
   ];
 }

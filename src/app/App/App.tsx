@@ -12,6 +12,7 @@ export function App() {
   //     throw new Error();
   //   }
   // }, []);
+  // 10:07
   return (
     <div className={`app ${theme}`}>
       <header></header>
